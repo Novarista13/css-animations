@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="stylesheet" href="../style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=BenchNine&display=swap");
+      button {
+        border: none;
+        padding: 12px 40px;
+        background-color: #c47135;
+        color: white;
+        font-family: "BenchNine";
+        font-size: 22px;
+        text-transform: uppercase;
+        cursor: pointer;
+        position: relative;
+      }
+      button::before {
+        content: "";
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        top: -5px;
+        left: -5px;
+        border: 2px solid #c47135;
+        border-width: 2px 0 0 2px;
+        transition: all 0.25s;
+      }
+      button::after {
+        content: "";
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        bottom: -5px;
+        right: -5px;
+        border: 2px solid #c47135;
+        border-width: 0 2px 2px 0;
+        transition: all 0.25s;
+      }
+      button:hover::before,
+      button:hover::after {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <button>submit</button>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+/* css transition */
+/* 
+button {
+  background-color: blue;
+  color: white;
+  border: none;
+  height: 50px;
+  width: 120px;
+  font-size: 15px;
+  transition-property: all;
+  transition-duration: 3000ms;
+  transition-timing-function: ease-out;
+  transition-delay: 1s;
+}
+
+button:hover {
+  background-color: blanchedalmond;
+  color: chocolate;
+  border-radius: 25px;
+} */
+
+/* CSS 2D transform */
+/* 
+img {
+  width: 300px;
+  display: block;
+  margin: 100px auto;
+  transition: transform 1s;
+  transform-origin: top;  */
+  /* percent keyword px */
+/* } */
+
+/* img:hover { */
+/* transform: translate(500px, 500px); */
+/* transform: scale(1.5); */
+/* transform: rotate(45deg); */
+/* transform: skew(30deg, 30deg); */
+/* } */
+
+/* CSS 3D transform */
+
+/* body {
+  perspective: 500px;
+} */
+/* 
+img:hover {
+  transform: translateZ(300px);
+  transform: rotateY(90deg);
+} */

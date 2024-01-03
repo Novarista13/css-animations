@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="stylesheet" href="../style.css" />
+    <style>
+      body {
+        background-color: #273c75;
+        font-family: sans-serif;
+      }
+      h1 {
+        font-size: 200px;
+        text-align: center;
+        text-transform: uppercase;
+        background: url(../images/bg2.jpg);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        animation: textbackground 20s linear infinite;
+      }
+      @keyframes textbackground {
+        from {
+          background-position: 0 0;
+        }
+        to {
+          background-position: 100% 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>css animation</h1>
+  </body>
+</html>

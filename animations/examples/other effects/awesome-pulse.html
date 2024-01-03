@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="stylesheet" href="../style.css" />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css"
+    />
+    <style>
+      .pulse {
+        width: 100px;
+        height: 100px;
+        background-color: #58ea;
+        color: white;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 100px;
+        font-size: 48px;
+        position: relative;
+      }
+      .pulse::before,
+      .pulse::after {
+        content: "";
+        position: absolute;
+        left: -20px;
+        top: -20px;
+        right: -20px;
+        bottom: -20px;
+        border: 2px solid #58ea;
+        border-radius: 50%;
+        animation: pulsing 1.5s linear infinite;
+      }
+      .pulse::after {
+        animation-delay: 0.5s;
+      }
+      @keyframes pulsing {
+        0% {
+          transform: scale(0.5);
+          opacity: 0;
+        }
+        50% {
+          transform: scale(1);
+          opacity: 1;
+        }
+        100% {
+          transform: scale(1.2);
+          opacity: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="pulse">
+      <i class="fas fa-phone"></i>
+    </div>
+  </body>
+</html>

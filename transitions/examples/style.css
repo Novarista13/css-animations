@@ -1,0 +1,8 @@
+
+body {
+  height: 570px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3b3b3b;
+}

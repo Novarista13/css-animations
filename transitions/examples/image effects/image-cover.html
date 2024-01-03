@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .fig {
+        width: 500px;
+        height: 300px;
+        color: white;
+        border-radius: 10px;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .fig img {
+        width: 100%;
+        height: 100%;
+        transition: all 0.5s;
+      }
+      .fig::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #164575;
+        opacity: 0.5;
+        transition: all 0.25s;
+        transition-delay: 0.25s;
+        transform: translateY(100%);
+      }
+      .fig:hover::before {
+        transform: translateY(0);
+        transition-delay: 0s;
+      }
+
+      .fig .caption {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.5s;
+        transform: translateY(-20px);
+        opacity: 0;
+      }
+      .fig:hover .caption {
+        opacity: 1;
+        transform: translateY(0);
+        transition-delay: 0.3s;
+      }
+      .caption h3,
+      .caption h5 {
+        margin: 0;
+        letter-spacing: 1px;
+      }
+      .caption h3 {
+        text-transform: uppercase;
+        font-weight: 500;
+        margin-bottom: 5px;
+      }
+      .caption h5 {
+        background-color: rgb(160, 116, 61);
+        padding: 3px 5px;
+      }
+    </style>
+    <title>Image Swipe</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="fig">
+      <img src="../cb.jpg" alt="cb" />
+      <div class="caption">
+        <h3>amazing caption!</h3>
+        <h5>You can write anything you want here!</h5>
+      </div>
+    </div>
+  </body>
+</html>
